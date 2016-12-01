@@ -1,0 +1,120 @@
+/* REGLAGE VARIABLE */
+
+:root {
+  --main-slider-height: 200px;
+}
+
+/* FIN VARIABLES */
+
+
+
+.fileatttooltip {
+	cursor:pointer;
+	position: absolute;
+	bottom:50px;
+	padding:15px;
+	border-radius: 0px 5px 0px 0px;
+	background:#222222;
+	left:0;
+}
+.fileflow {
+    overflow-y: hidden;
+    overflow-x: hidden;
+    display: inline-block;
+    position: absolute;
+    left: 50px;
+    right: 50px;
+    height: var(--main-slider-height);
+    white-space: nowrap;
+    width: auto;
+}
+.fileatt {
+	display: block;
+    height: var(--main-slider-height);
+    left: 0;
+    background: #222222;
+}
+.fillemin {
+	height: var(--main-slider-height);
+    width: 196px;
+    background: black;
+    border-right: 7px solid #222222;
+    display: inline-block;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.fillemin-left {
+	cursor:pointer;
+	font-size: 70px;
+	line-height: var(--main-slider-height);
+	text-align: center;
+	width:50px;
+	height:var(--main-slider-height);
+	float:left;
+	background:#111111;
+	color:white;
+}
+.fillemin-right {
+	cursor:pointer;
+	font-size: 70px;
+	line-height: var(--main-slider-height);
+	text-align: center;
+	width:50px;
+	height:var(--main-slider-height);
+	float:right;
+	background:#111111;
+	color:white;
+}
+.fillemin:last-child {
+	border-right:none;
+}
+.fillemin .overlay {
+	height: var(--main-slider-height);
+    width: 196px;
+	position:relative;
+	top:0;
+	bottom:0;
+	left:0;
+	right:0;
+	background: rgba(0,0,0,0.8);
+	margin:auto;
+	color:white;
+	vertical-align:middle;
+	opacity: 0;
+	-webkit-transition: opacity .25s ease;
+	-moz-transition: opacity .25s ease;
+	cursor: pointer;
+	line-height: var(--main-slider-height);
+	-webkit-transition: opacity 0.2s ease-in-out; /* Firefox */
+	-moz-transition: opacity 0.2s ease-in-out; /* WebKit */
+	-o-transition: opacity 0.2s ease-in-out; /* Opera */
+	transition: opacity 0.2s ease-in-out; /* Standard */
+}
+.fillemin:hover .overlay {
+	opacity: 1;
+}
+.fillemin .texttitle {
+	top:15px;
+	padding:5px;
+	position: relative;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	text-align: center;
+	width: var(--main-slider-height);
+	line-height: 15px;
+	box-sizing:border-box;
+	overflow: hidden;
+}
+.fillemin .textdj {
+	top:18px;
+	line-height: 15px;
+	padding:5px;
+	position: relative;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	text-align: center;
+	width: 196px;
+	box-sizing:border-box;
+	overflow: hidden;
+}
